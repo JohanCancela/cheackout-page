@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CheckOut Page" />
+    <meta name="description" content="devChallenges Responsive Web Developer Part #6." />
+    <meta name="author" content="Johan Cancela">
+    <title>CheckOut Page | Johan Cancela</title>
+    <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/checkoutstyles.css">
+    <script src="https://kit.fontawesome.com/54c97c069f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- Title Page -->
+        <header class="title">
+            <h1>Checkout</h1>
+        </header>
+
+        <!-- Content Main -->
+        <main class="container d-flex">
+
+            <!-- Section Check -->
+            <section class="check d-flex">
+                <section class="contact">
+                    <div class="contact-title">
+                        <h2>Contact Information</h2>
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <div class="input d-flex">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <div class="input d-flex">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="number" name="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                </section>
+                <section class="shipping">
+                    <div class="shipping-title">
+                        <h2>Shipping Address</h2>
+                    </div>
+                    <div class="full-name">
+                        <label for="name">Full Name</label>
+                        <div class="input d-flex">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="address">
+                        <label for="address">Address</label>
+                        <div class="input d-flex">
+                            <i class="fa-solid fa-house"></i>
+                            <input type="text" name="address" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="city">
+                        <label for="city">City</label>
+                        <div class="input d-flex">
+                            <i class="fa-solid fa-city"></i>
+                            <input type="text" name="city" placeholder="City">
+                        </div>
+                    </div>
+                    <div class="counntry-postal d-flex">
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <div class="input d-flex">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <select name="country">
+                                    <option value="1"></option>
+                                    <option value="2">Colombia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="postal-code">
+                            <label for="postal-code">Postal Code</label>
+                            <div class="input d-flex">
+                                <i class="fa-brands fa-usps"></i>
+                                <input type="number" name="postal-code" placeholder="Postal Code">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="save d-flex">
+                    <input class="checkbox" type="checkbox" name="save">
+                    <label for="save">Save this information for next time</label>
+                </div>
+                <div class="continue d-flex">
+                    <a href="">Continue</a>
+                </div>
+            </section>
+
+            <!-- Section Out -->
+            <section class="out d-flex">
+                <div class="backbag d-flex">
+                    <figure class="backbag-photo">
+                        <img src="./assets/photo1.png" class="pic" alt="Backbag Photo">
+                    </figure>
+                    <div class="backbag-info d-flex">
+                        <div class="backbag-title">
+                            <h1>Vintage Backbag</h1>
+                        </div>
+                        <div class="backbag-price">
+                            <h2>$54.99 <span class="deduction">$94.99</span></h2>
+                        </div>
+                        <div class="amount d-flex">
+                            <span class="down"><i class="fa-solid fa-minus" id="btn-minus"></i></span>
+                            <span class="counter">1</span>
+                            <span class="up"><i class="fa-solid fa-plus" id="btn-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoes d-flex">
+                    <figure class="shoes-photo">
+                        <img src="./assets/photo2.png" class="pic" alt="Backbag Photo">
+                    </figure>
+                    <div class="shoes-info d-flex">
+                        <div class="shoes-title">
+                            <h1>Vintage Backbag</h1>
+                        </div>
+                        <div class="shoes-price">
+                            <h2>$54.99 <span class="deduction">$94.99</span></h2>
+                        </div>
+                        <div class="amount d-flex">
+                            <span class="down"><i class="fa-solid fa-minus" id="btn-minus"></i></span>
+                            <span class="counter">1</span>
+                            <span class="up"><i class="fa-solid fa-plus" id="btn-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-shipping d-flex">
+                        <h1>Shipping</h1>
+                        <h1>$19</h1>
+                    </div>
+                    <div class="price-total d-flex">
+                        <h1>Total</h1>
+                        <h1>$148.98</h1>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>created by <span class="username">Johan Cancela</span> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p>
+    </footer>
+
+    <script src="./js/productcounter.js"></script>
+</body>
+</html>
